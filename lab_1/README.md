@@ -15,5 +15,6 @@ test_changes
 
 web_changes
 6. redact
+7. git pull - sync command
 
 
