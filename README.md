@@ -6,3 +6,4 @@ Labs
 4. create branches         : git branch   ( name of branch ) 
    Switch between branches : git checkout ( name of branch ) 
 5. На гілці main не відбулось змін так як ми закомітили зміни на іншу гілку "branch_1"
+7. Конфлікт вмісту файлів readmi.md, порядок гілки довелось встановити вручну
