@@ -18,3 +18,4 @@ web_changes
 7. git pull - sync command
 
 
+![Logo](https://github.com/Vitalik-Khomiak/Vitalik_Khomiak_IK_31/blob/main/lab_1/ArtLab.png "ArtLab")
