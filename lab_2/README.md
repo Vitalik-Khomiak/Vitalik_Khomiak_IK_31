@@ -5,6 +5,8 @@ Labs_2
 
 2. Створюю файл test.py для виконання базових прикладів.
 Виводжу вбудованні константи за допомогою команд:
+	```python
 	print("First_constant: ", False)
 	print("Second_constant: ", None)	
 	print("Third_constant: ", True)
+	 ```
