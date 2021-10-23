@@ -50,3 +50,9 @@ with open("1.txt", 'r') as readme_file:
     first_str = readme_file.readline()
     print(first_str)
 ```
+
+2.6 Виводжу результат роботи з lambdas за допомогою команд:
+```python
+aor = lambda x, y: print(f"Площа: {x*y}")
+aor(8,5)
+```

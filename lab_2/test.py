@@ -37,3 +37,5 @@ with open("1.txt", 'r') as readme_file:
     print(first_str)
 
 #2.6
+aor = lambda x, y: print(f"Площа: {x*y}")
+aor(8,5)
