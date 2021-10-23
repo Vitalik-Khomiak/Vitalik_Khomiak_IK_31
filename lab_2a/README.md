@@ -56,3 +56,15 @@ with open("1.txt", 'r') as readme_file:
 aor = lambda x, y: print(f"Площа: {x*y}")
 aor(8,5)
 ```
+
+
+
+3. Створив у власному рипозеторії такі файли:
+```python
+lab2a/
+├── modules/
+│   └── common.py
+├── __init__.py
+└── __main__.py
+```
+
