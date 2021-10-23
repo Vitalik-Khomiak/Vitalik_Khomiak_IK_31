@@ -32,3 +32,14 @@ for x in "ArtLab":
   print(x)
 7:36 PM 10/23/2021
 ```
+
+2.4 Виводжу результат роботи конструкції try->except->finally при помилці за допомогою команд:
+```python
+x = '5'
+try:
+    x += 7
+except TypeError as error:
+    print(f"Error: {error}, occured !!!check your code")
+finally:
+    print("x = {x}({type(x)})")
+```

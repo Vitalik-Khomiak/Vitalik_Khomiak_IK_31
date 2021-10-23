@@ -21,3 +21,12 @@ else:
 #b
 for x in "ArtLab":
   print(x)
+
+#2.4
+x = '5'
+try:
+    x += 7
+except TypeError as error:
+    print(f"Error: {error}, occured !!!check your code")
+finally:
+    print("x = {x}({type(x)})")
