@@ -43,3 +43,10 @@ except TypeError as error:
 finally:
     print("x = {x}({type(x)})")
 ```
+
+2.5 Виводжу результат роботи контекст-менеджера with за допомогою команд:
+```python
+with open("1.txt", 'r') as readme_file:
+    first_str = readme_file.readline()
+    print(first_str)
+```

@@ -30,3 +30,10 @@ except TypeError as error:
     print(f"Error: {error}, occured !!!check your code")
 finally:
     print("x = {x}({type(x)})")
+
+#2.5
+with open("1.txt", 'r') as readme_file:
+    first_str = readme_file.readline()
+    print(first_str)
+
+#2.6
