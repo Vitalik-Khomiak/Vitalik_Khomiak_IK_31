@@ -1,5 +1,5 @@
 # Vitalik_Khomiak_IK_31
-Labs_2
+Labs_2a
 
 1. Переглянув офіційну документацію для Python.
 
@@ -68,3 +68,16 @@ lab2a/
 └── __main__.py
 ```
 
+3.1 Перейшовши у папку з даними файлами запустив виконання програми цією командою:
+```python
+python3 .
+```
+
+Виконання команди:
+```python
+E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>python .
+We are in the __main__
+2021-10-23 21:58:43.005686
+win32
+test
+```
