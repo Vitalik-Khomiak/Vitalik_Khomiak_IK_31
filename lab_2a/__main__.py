@@ -15,8 +15,10 @@ def main(text):
     print(f"We are in the {__name__}")
     print(common.get_current_date().now())
     print(common.get_current_platform())
-    if text:
-        print("З консолі було передано аргумент\n", 10*"=", f">> {text} <<", 10*"=")
+    if not text: common.s_arr()
+    else: print(common.filter(text))
+    
+    if text: print("З консолі було передано аргумент\n", 10*"=", f">> {text} <<", 10*"=")
 
 
 def how_to_write_logs():

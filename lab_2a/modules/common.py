@@ -1,6 +1,8 @@
 import datetime
 import sys
-
+import logging
+import numpy
+import random
 
 def get_current_date():
     """
@@ -15,18 +17,31 @@ def get_current_platform():
     """
     return sys.platform
 
-def filter (filter):
-    num=range(0,101)
+def filter(filter):
+    numbers=range(0,101)
     if filter=="True":
-        m = "even numbers: " 
+    	msg = "paired elements: " 
     elif filter=="False":
-        m = "odd numbers: "
+    	msg = "odd elements: "
+    
+    for index in range(0, len(numbers)):
+    	if (filter == "True") & (numbers[index]%2 == 0):
+    	    msg += str(numbers[index]) + " "
+    	elif (filter == "False") & (numbers[index]%2 != 0):
+    	    msg += str(numbers[index]) + " "
+    return msg
 
-    for index in num:
-        if (filter == "True") & (num[index]%2 == 0):
-            m += str(num[index]) + " "
-        elif (filter == "False") & (num[index]%2 != 0):
-            m += str(num[index]) + " "
-    return m
-
-
+def s_arr():
+    y = 200
+    z = 11
+    x=[random.randint(1, y)
+       for i in range(z)]      
+    print("arrray X[]:", x)
+    index = int(input("Press element num: "))
+    try:
+    	print(f"X[{index}] = {x[index]}")
+    	print('------------------------------------')
+    except IndexError:
+        logging.error("Num must be in range 0-%s", z-1)
+    else:
+    	logging.info("\nNice \n-_- -_- -_-")

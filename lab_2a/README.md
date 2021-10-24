@@ -117,19 +117,19 @@ test
 Створив власну функцію у файлі common.py яка буде виводить всі парні числа від 0 до 100, якщо у функцію передати значення True і непарні якщо значення False. Виклик цієї функцію виконую з __main__ . Код власної функції:
 
 ```python
-def filter (filter):
-    num=range(0,101)
+def filter(filter):
+    numbers=range(0,101)
     if filter=="True":
-        m = "even numbers: " 
+    	msg = "paired elements: " 
     elif filter=="False":
-        m = "odd numbers: "
-
-    for index in num:
-        if (filter == "True") & (num[index]%2 == 0):
-            m += str(num[index]) + " "
-        elif (filter == "False") & (num[index]%2 != 0):
-            m += str(num[index]) + " "
-    return m
+    	msg = "odd elements: "
+    
+    for index in range(0, len(numbers)):
+    	if (filter == "True") & (numbers[index]%2 == 0):
+    	    msg += str(numbers[index]) + " "
+    	elif (filter == "False") & (numbers[index]%2 != 0):
+    	    msg += str(numbers[index]) + " "
+    return msg
 
 ```
 Результат виконання з параметром -o True:
@@ -137,8 +137,9 @@ def filter (filter):
 ```python
 E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>python . -o True
 We are in the __main__
-2021-10-23 22:35:25.215600
+2021-10-24 09:41:19.540213
 win32
+Парні елементи: 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100
 З консолі було передано аргумент
  ========== >> True << ==========
 test
@@ -149,9 +150,64 @@ test
 ```python
 E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>python . -o False
 We are in the __main__
-2021-10-23 22:36:15.417472
+2021-10-24 09:40:57.135856
 win32
+Непарні елементи: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99
 З консолі було передано аргумент
  ========== >> False << ==========
 test
+```
+
+
+
+
+4. Створив функцію яка може виконуватись з помилкою. У випадку її виникнення виводить ERROR повідомлення за допомогою логування використовуючи бібліотеку logging. Якщо функція виконалася без помилки то виводить INFO повідомлення. Код власної функції:
+```python
+def s_arr():
+    y = 200
+    z = 11
+    x=[random.randint(1, y)
+       for i in range(z)]      
+    print("arrray X[]:", x)
+    index = int(input("Press element num: "))
+    try:
+    	print(f"X[{index}] = {x[index]}")
+    	print('------------------------------------')
+    except IndexError:
+        logging.error("Num must be in range 0-%s", z-1)
+    else:
+    	logging.info("\nNice \n-_- -_- -_-")
+
+```
+Результат виконання з помилкою:
+```python
+E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>python .
+We are in the __main__
+2021-10-24 09:59:53.222404
+win32
+arrray X[]: [92, 143, 29, 44, 147, 69, 25, 123, 102, 77, 126]
+Press element num: 15
+2021-10-24 09:59:56,143 root ERROR: Num must be in range 0-10
+test
+
+E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>
+```
+
+Результат виконання без помилки:
+```python
+E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>python .
+We are in the __main__
+2021-10-24 10:00:34.382228
+win32
+arrray X[]: [63, 92, 107, 101, 67, 58, 133, 65, 99, 44, 107]
+Press element num: 10
+X[10] = 107
+------------------------------------
+2021-10-24 10:00:36,303 root INFO:
+Nice
+-_- -_- -_-
+test
+
+E:\Google_Drive      (lol22725@gmail.com) (not syncing)\University\TPIS_git\Vitalik_Khomiak_IK_31\lab_2a>
+
 ```
