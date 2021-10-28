@@ -26,4 +26,4 @@ class TestClass(unittest.TestCase):
         self.assertTrue(True)
 
     def test_my_fun(self):
-        self.assertEqual(my_good_fun(), "Success")
+        self.assertEqual(my_good_fun(), "success")
