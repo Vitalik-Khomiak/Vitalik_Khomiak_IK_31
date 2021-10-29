@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+rootdir: /home/artlab/Desktop/rep/lab_2
+collected 5 items
+
+tests/tests.py .....                                                     [100%]
+
+============================== 5 passed in 0.99s ===============================
+========================================
+Результат без параметрів: 
+Good night
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Good night
+Time is:  09:04:54 AM
+Date is:  10-29-2021
