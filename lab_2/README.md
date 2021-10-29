@@ -48,7 +48,58 @@
 
     =========================================================================== 5 passed in 0.92s 
  
+8. 
 
+
+
+    ef home_work(t=datetime.today().strftime("%H:%M %p")):
+    # Ваш захист
+    if 'PM' in t:
+        print ("Good night")
+        return 'Good night'
+    if 'AM' in t:
+        print ("Good day")
+        return 'Good day'
+
+
+
+
+
+    (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ python app.py
+    ========================================
+    Результат без параметрів: 
+    Good day
+    No URL passed to function
+    ========================================
+    Результат з правильною URL: 
+    Good day
+    Time is:  08:52:47 AM
+    Date is:  10-29-2021
+    (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ 
+
+
+9. 
+
+
+
+    def test_home_work(self):
+    # Ваш захист
+    self.assertEqual(home_work("20:20:20 PM"), "Good night")
+    self.assertEqual(home_work("10:10:10 AM"), "Good day")
+
+
+
+    (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ pytest tests/tests.py
+    ============================= test session starts 
+    platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+    rootdir: /home/artlab/Desktop/rep/lab_2
+    collected 5   
+    items                                                              
+
+    tests/tests.py .....   
+    [100%]
+
+    ============================== 5 passed in 1.00s 
 
 
 
