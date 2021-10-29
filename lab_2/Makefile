@@ -3,7 +3,6 @@
 all: install test run deploy
 
 install:
-  @echo "Welcome to quick configuration"
 	@echo "-----------A---r---t---L---A---B-----------"
 	@echo "Installing pipenv and dependencies."
 	@echo "-----------A---r---t---L---A---B-----------"
