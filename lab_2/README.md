@@ -113,4 +113,5 @@ pytest tests/tests.py > results.txt
 python app.py >> results.txt
 ```
 
+11. Зробив коміт із змінами до свого репозиторію.
 
