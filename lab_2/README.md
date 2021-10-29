@@ -48,10 +48,10 @@
 
     =========================================================================== 5 passed in 0.92s 
  
-8. 
+8. ❗ (Захист) У програмі дописав функцію яка буде перевіряти час доби AM/PM та відповідно друкувати: Good day/night.
 
-
-
+    Код програми:
+    
     ef home_work(t=datetime.today().strftime("%H:%M %p")):
     # Ваш захист
     if 'PM' in t:
@@ -64,7 +64,8 @@
 
 
 
-
+    Запуск програми:
+    
     (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ python app.py
     ========================================
     Результат без параметрів: 
@@ -78,17 +79,19 @@
     (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ 
 
 
-9. 
+9. ❗ (Захист) Написав тест що буде перевіряти правильність виконання моєї функції.
 
 
-
+    Код програми:
+    
     def test_home_work(self):
     # Ваш захист
     self.assertEqual(home_work("20:20:20 PM"), "Good night")
     self.assertEqual(home_work("10:10:10 AM"), "Good day")
 
 
-
+    Запуск програми:
+    
     (lab_2) artlab@artlab-VirtualBox:~/Desktop/rep/lab_2$ pytest tests/tests.py
     ============================= test session starts 
     platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
