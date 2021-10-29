@@ -23,6 +23,7 @@ def check_time(d):
 
 
 def main(url=''):
+    home_work()
     if not url:
         print("No URL passed to function")
         return False
@@ -36,12 +37,21 @@ def main(url=''):
         check_time(r.json())
     else:
         check_time(get_time_if_url_not_work())
+
     return True
 
 
-def home_work():
+
+
+def home_work(t=datetime.today().strftime("%H:%M %p")):
     # Ваш захист
-    pass
+    if 'PM' in t:
+        print ("Good night")
+        return 'Good night'
+    if 'AM' in t:
+        print ("Good day")
+        return 'Good day'
+
 
 
 def my_good_fun():
