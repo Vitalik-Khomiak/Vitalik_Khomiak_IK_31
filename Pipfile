@@ -4,14 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-requests = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
-
-[scripts]
-server = "python manage.py runserver 0.0.0.0:8000"
-monitoring = "python monitoring.py"

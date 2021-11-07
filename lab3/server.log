@@ -1,0 +1,10 @@
+ERROR 2021-11-07 19:31:08,632 root : ArtLab_Сервер недоступний.
+INFO 2021-11-07 19:32:08,716 root : ArtLab_Сервер доступний. Час на сервері: Time: 17:32:08 Data: 2021/32/11/07/21
+INFO 2021-11-07 19:32:08,717 root : Запит: : localhost:8000/health/
+INFO 2021-11-07 19:32:08,718 root : Відповідь сервера має наступні поля:
+INFO 2021-11-07 19:32:08,718 root : Ключ: date, Значення: Time: 17:32:08 Data: 2021/32/11/07/21
+INFO 2021-11-07 19:32:08,719 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-07 19:32:08,719 root : Ключ: server_info, Значення: Name_OS: Linux; Name_Node: artlab-VirtualBox; Release: 5.4.0-74-generic; Version: #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021; Indentificator:x86_64
+INFO 2021-11-07 19:32:08,719 root : Ключ: client_info, Значення: Browser: python-requests/2.26.0; IP: 127.0.0.1
+ERROR 2021-11-07 19:33:08,764 root : ArtLab_Сервер недоступний.
+ERROR 2021-11-07 19:34:08,803 root : ArtLab_Сервер недоступний.
