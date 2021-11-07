@@ -11,7 +11,7 @@ sudo pipenv install django
 #### 2. За допомогою Django Framework створив заготовку (template) власного проекту chemist_site. Використовуючи команду sudo pipenv run django-admin startproject chemist_site.
 Для зручності виніс всі створені файли на один рівень вище щоб структура проекту була такою як показано нижче:
 
-bash
+```python
 Lab3/
 ├── my_site/
 │   ├── __init__.py
@@ -19,6 +19,7 @@ Lab3/
 │   ├── urls.py
 │   └── wsgi.py
 └── manage.py
+```
 
 За допомогою команд:
 ```python
