@@ -13,7 +13,7 @@ sudo pipenv install django
 
 bash
 Lab3/
-├── chemist_site/
+├── my_site/
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
@@ -105,6 +105,25 @@ urlpatterns = [
 
 #### 10. Запустив сервер та переконалався що сторінки доступні. Виконала коміт робочого Django сайту.
 Виконання команди:
+
+Cartlab@artlab-VirtualBox:~/PycharmProjects/Vitalik_Khomiak_IK_31/lab3$ sudo pipenv run python manage.py runserver
+[sudo] password for artlab:     
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 07, 2021 - 17:16:35
+Django version 3.2.9, using settings 'my_site.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[07/Nov/2021 17:16:40] "GET /health/ HTTP/1.1" 200 376
+[07/Nov/2021 17:16:49] "GET / HTTP/1.1" 200 167
+[07/Nov/2021 17:16:54] "GET /health/ HTTP/1.1" 200 376
+
+
 
 #### 11. Роль моніторингу буде здійснювати файл monitoring.py який за допомогою бібліотеки requests буде опитувати сторінку health. Встановлюємо дану бібліотеку;
      
