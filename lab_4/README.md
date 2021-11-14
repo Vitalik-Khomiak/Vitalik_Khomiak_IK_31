@@ -5,7 +5,7 @@
 
 2. Для перевірки чи докер встановлений і працює правильно на віртуальній машині запустітив перевірку версії командою 
 
-```python
+```text
 sudo docker -v > my_work.log 
 ```
 
@@ -49,18 +49,18 @@ docker.io/library/python:3.8-slim
 ```
 
 
-```python
+```text
     docker images
 ```
 
-```python
+```text
 artlab@artlab-VirtualBox:~/PycharmProjects/Vitalik_Khomiak_IK_31/lab_4$ sudo docker images
 REPOSITORY        TAG        IMAGE ID       CREATED       SIZE
 python            3.8-slim   214d62795dbb   2 weeks ago   122MB
 docker/whalesay   latest     6b362a9f73eb   6 years ago   247MB
 ```
 
-```python
+```text
     docker inspect python:3.7-slim
 ```
 
@@ -68,7 +68,7 @@ docker/whalesay   latest     6b362a9f73eb   6 years ago   247MB
     3) Ознайомився із коментарями та постарався зрозуміти структуру написання Dockerfile;
     4) Замінив посилання на власний Git репозиторій із моїм веб-сайтом та закомітив даний Dockerfile*
 
-```python
+```text
 FROM python:3.8-slim
 
 LABEL author="Bohdan"
@@ -104,15 +104,15 @@ ENTRYPOINT ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 6. Виконав білд (build) Docker імеджа та завантажив його до репозиторію. Для цього потрібно вказати правильну назву репозиторію та TAG. Оскільки мій репозиторій artlaab/lab4 то команда буде виглядати (де django - це тег): 
 
-```python
+```text
 sudo docker build -t artlaab/lab4:django
 ```
 
-```python
+```text
 docker images
 ```
 
-```python
+```text
 artlab@artlab-VirtualBox:~/PycharmProjects/Vitalik_Khomiak_IK_31/lab_4$ sudo docker images
 REPOSITORY        TAG        IMAGE ID       CREATED          SIZE
 artlaab/lab4      django     697b25b2c936   27 seconds ago   340MB
@@ -129,7 +129,7 @@ docker push artlaab/lab4:django
 
 7. Для запуску веб-сайту виконав команду 
 
-```python
+```text
 sudo docker run -it --name=django --rm -p 8000:8000 artlaab/lab4:django
 ```
 
@@ -142,7 +142,7 @@ sudo docker run -it --name=django --rm -p 8000:8000 artlaab/lab4:django
 
 
 Вміст файлу Dockerfile.site:
-```python
+```text
 FROM python:3.8-slim
 
 LABEL author="Bohdan"
@@ -176,7 +176,7 @@ ENTRYPOINT ["pipenv", "run", "python", "monitoring.py" , "0.0.0.0:8000"]
 
     2. Виконав білд даного імеджа та дав йому тег monitoring командами:
 
-```python
+```text
 sudo docker build -f Dockerfile.site -t artlaab/lab4:monitoring .
 docker push artlaab/lab4:monitoring
 ```
@@ -185,7 +185,7 @@ docker push artlaab/lab4:monitoring
 Використовуючи команди:
 Запуск серевера: 
 
-```python
+```text
 artlab@artlab-VirtualBox:~/PycharmProjects/Vitalik_Khomiak_IK_31/lab_4$ sudo docker run -it --name=django --rm -p 8000:8000 artlaab/lab4:django
 Watching for file changes with StatReloader
 Performing system checks...
@@ -207,7 +207,7 @@ Quit the server with CONTROL-C.
 ```
 
 Запуск моніторингу:
-```python
+```text
 
 artlab@artlab-VirtualBox:~/PycharmProjects/Vitalik_Khomiak_IK_31/lab_4$ sudo docker run -it --name=monitoring --rm --net=host -v $(pwd)/server.log:/app/server.log artlaab/lab4:monitoring
 [sudo] password for artlab:     
