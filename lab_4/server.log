@@ -1,0 +1,28 @@
+INFO 2021-11-14 16:11:23,374 root : ArtLab_Сервер доступний. Час на сервері: Time: 16:11:23 Data: 2021/11/11/14/21
+INFO 2021-11-14 16:11:23,374 root : Запит: : localhost:8000/health/
+INFO 2021-11-14 16:11:23,374 root : Відповідь сервера має наступні поля:
+INFO 2021-11-14 16:11:23,375 root : Ключ: date, Значення: Time: 16:11:23 Data: 2021/11/11/14/21
+INFO 2021-11-14 16:11:23,375 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-14 16:11:23,375 root : Ключ: server_info, Значення: Name_OS: Linux; Name_Node: 3480b1a3479d; Release: 5.4.0-74-generic; Version: #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021; Indentificator:x86_64
+INFO 2021-11-14 16:11:23,375 root : Ключ: client_info, Значення: Browser: python-requests/2.26.0; IP: 172.17.0.1
+INFO 2021-11-14 16:12:23,472 root : ArtLab_Сервер доступний. Час на сервері: Time: 16:12:23 Data: 2021/12/11/14/21
+INFO 2021-11-14 16:12:23,473 root : Запит: : localhost:8000/health/
+INFO 2021-11-14 16:12:23,474 root : Відповідь сервера має наступні поля:
+INFO 2021-11-14 16:12:23,475 root : Ключ: date, Значення: Time: 16:12:23 Data: 2021/12/11/14/21
+INFO 2021-11-14 16:12:23,475 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-14 16:12:23,476 root : Ключ: server_info, Значення: Name_OS: Linux; Name_Node: 3480b1a3479d; Release: 5.4.0-74-generic; Version: #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021; Indentificator:x86_64
+INFO 2021-11-14 16:12:23,476 root : Ключ: client_info, Значення: Browser: python-requests/2.26.0; IP: 172.17.0.1
+INFO 2021-11-14 16:13:23,572 root : ArtLab_Сервер доступний. Час на сервері: Time: 16:13:23 Data: 2021/13/11/14/21
+INFO 2021-11-14 16:13:23,572 root : Запит: : localhost:8000/health/
+INFO 2021-11-14 16:13:23,573 root : Відповідь сервера має наступні поля:
+INFO 2021-11-14 16:13:23,573 root : Ключ: date, Значення: Time: 16:13:23 Data: 2021/13/11/14/21
+INFO 2021-11-14 16:13:23,574 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-14 16:13:23,574 root : Ключ: server_info, Значення: Name_OS: Linux; Name_Node: 3480b1a3479d; Release: 5.4.0-74-generic; Version: #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021; Indentificator:x86_64
+INFO 2021-11-14 16:13:23,574 root : Ключ: client_info, Значення: Browser: python-requests/2.26.0; IP: 172.17.0.1
+INFO 2021-11-14 16:14:23,679 root : ArtLab_Сервер доступний. Час на сервері: Time: 16:14:23 Data: 2021/14/11/14/21
+INFO 2021-11-14 16:14:23,681 root : Запит: : localhost:8000/health/
+INFO 2021-11-14 16:14:23,682 root : Відповідь сервера має наступні поля:
+INFO 2021-11-14 16:14:23,682 root : Ключ: date, Значення: Time: 16:14:23 Data: 2021/14/11/14/21
+INFO 2021-11-14 16:14:23,682 root : Ключ: current_page, Значення: localhost:8000/health/
+INFO 2021-11-14 16:14:23,683 root : Ключ: server_info, Значення: Name_OS: Linux; Name_Node: 3480b1a3479d; Release: 5.4.0-74-generic; Version: #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021; Indentificator:x86_64
+INFO 2021-11-14 16:14:23,683 root : Ключ: client_info, Значення: Browser: python-requests/2.26.0; IP: 172.17.0.1
