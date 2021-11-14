@@ -134,7 +134,7 @@ sudo docker run -it --name=django --rm -p 8000:8000 artlaab/lab4:django
 ```
 
 Перейшов на адресу http://127.0.0.1:8000 та переконався що мій веб-сайт працює :
-![Task7(https://github.com/Vitalik-Khomiak/Vitalik_Khomiak_IK_31/blob/main/lab_4/localhost.png)]
+![Task7](https://github.com/Vitalik-Khomiak/Vitalik_Khomiak_IK_31/blob/main/lab_4/localhost.png)
 
 
 8. Оскільки веб-сайт готовий і працює, потрібно створит ще один контейнер із програмою моніторингу нашого веб-сайту (Моє Завдання на роботу):
