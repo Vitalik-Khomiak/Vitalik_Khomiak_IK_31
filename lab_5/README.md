@@ -313,7 +313,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.tests
-    image: pavlovulchak/lab4:compose-tests
+    image: artlaab/lab4:compose-tests
     container_name: tests
     depends_on:
       - hits
