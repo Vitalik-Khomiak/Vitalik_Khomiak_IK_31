@@ -136,10 +136,13 @@ ENTRYPOINT pipenv run pytest test_app.py --url http://app:5000
 Вміст файла `Makefile`:
 ```text
 STATES := app tests
-REPO := pavlovulchak/lab4
+REPO := artlaab/lab4
 
 .PHONY: $(STATES)
 
+	
+	
+	
 $(STATES):
 	@docker build -f Dockerfile.$(@) -t $(REPO):$(@) .
 
@@ -219,7 +222,7 @@ Total reclaimed space: 0B
 
 ```
 
-11. Створив директиву `docker-push` в Makefile для завантаження створених імеджів у мій Docker Hub репозиторій.
+11 . Створив директиву `docker-push` в Makefile для завантаження створених імеджів у мій Docker Hub репозиторій.
 Деректива `docker-push`:
 ```text
 docker-push:
