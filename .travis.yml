@@ -49,4 +49,4 @@ jobs:
         - make docker-push
 branches:
   only:
-    - master
+    - main
